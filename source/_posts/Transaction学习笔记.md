@@ -9,6 +9,8 @@ tags:
     2. 一致性(Consistency)
     3. 隔离性(Isolation)
     4. 持久性(Durability)
+	
+<!--more-->
     
 #### 1.事务隔离级别(Transaction Isolation Level)
     1. READ_UNCOMMITTED
