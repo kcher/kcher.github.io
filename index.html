@@ -139,6 +139,123 @@
           <div id="js-content" class="content-ll">
             
   
+    <article id="post-Transaction学习笔记" class="article article-type-post  article-index" itemscope itemprop="blogPost">
+  <div class="article-inner">
+    
+      <header class="article-header">
+        
+  
+    <h1 itemprop="name">
+      <a class="article-title" href="/2017/12/22/Transaction学习笔记/">Transaction学习笔记</a>
+    </h1>
+  
+
+        
+        <a href="/2017/12/22/Transaction学习笔记/" class="archive-article-date">
+  	<time datetime="2017-12-22T06:02:40.000Z" itemprop="datePublished"><i class="icon-calendar icon"></i>2017-12-22</time>
+</a>
+        
+      </header>
+    
+    <div class="article-entry" itemprop="articleBody">
+      
+        <h4 id="0-事务的特性"><a href="#0-事务的特性" class="headerlink" title="0.事务的特性"></a>0.事务的特性</h4><pre><code>1. 原子性(Atomicity)
+2. 一致性(Consistency)
+3. 隔离性(Isolation)
+4. 持久性(Durability)
+</code></pre><h4 id="1-事务隔离级别-Transaction-Isolation-Level"><a href="#1-事务隔离级别-Transaction-Isolation-Level" class="headerlink" title="1.事务隔离级别(Transaction Isolation Level)"></a>1.事务隔离级别(Transaction Isolation Level)</h4><pre><code>1. READ_UNCOMMITTED
+2. READ_COMMITTED
+3. REPEATABLE_READ
+4. SERIALIZABLE
+</code></pre><h4 id="2-数据在高并发下产生的问题"><a href="#2-数据在高并发下产生的问题" class="headerlink" title="2.数据在高并发下产生的问题"></a>2.数据在高并发下产生的问题</h4><pre><code>1. Dirty Read(脏读)
+2. Unrepeatable Read(不可重复读)
+3. Phantom Read(幻读)
+</code></pre><table>
+<thead>
+<tr>
+<th>事务隔离级别</th>
+<th>脏读</th>
+<th>不可重复读</th>
+<th>幻读</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>READ_UNCOMMITTED</td>
+<td><font color="green">允许</font></td>
+<td><font color="green">允许</font></td>
+<td><font color="green">允许</font></td>
+</tr>
+<tr>
+<td>READ_COMMITTED</td>
+<td><font color="red">禁止</font></td>
+<td><font color="green">允许</font></td>
+<td><font color="green">允许</font></td>
+</tr>
+<tr>
+<td>REPEATABLE_READ</td>
+<td><font color="red">禁止</font></td>
+<td><font color="red">禁止</font></td>
+<td><font color="green">允许</font></td>
+</tr>
+<tr>
+<td>SERIALIZABLE</td>
+<td><font color="red">禁止</font></td>
+<td><font color="red">禁止</font></td>
+<td><font color="red">禁止</font></td>
+</tr>
+</tbody>
+</table>
+<h4 id="3-Spring事务"><a href="#3-Spring事务" class="headerlink" title="3.Spring事务"></a>3.Spring事务</h4><h5 id="事务传播行为-Transaction-Propagation-Behavior"><a href="#事务传播行为-Transaction-Propagation-Behavior" class="headerlink" title="事务传播行为(Transaction Propagation Behavior)"></a>事务传播行为(Transaction Propagation Behavior)</h5><pre><code>1. PROPAGATION_REQUIRED
+2. PROPAGATION_REQUIRES_NEW
+3. PROPAGATION_NESTED
+4. PROPAGATION_SUPPORTS
+5. PROPAGATION_NOT_SUPPORTED
+6. PROPAGATION_NEVER
+7. PROPAGATION_MANDATORY
+</code></pre><h4 id="4-参考资料"><a href="#4-参考资料" class="headerlink" title="4.参考资料"></a>4.参考资料</h4><p><a href="https://my.oschina.net/huangyong/blog/160012" target="_blank" rel="noopener">Transaction那点事儿</a></p>
+
+      
+
+      
+    </div>
+    <div class="article-info article-info-index">
+      
+      
+      
+
+      
+        <p class="article-more-link">
+          <a class="article-more-a" href="/2017/12/22/Transaction学习笔记/">展开全文 >></a>
+        </p>
+      
+
+      
+      <div class="clearfix"></div>
+    </div>
+  </div>
+</article>
+
+<aside class="wrap-side-operation">
+    <div class="mod-side-operation">
+        
+        <div class="jump-container" id="js-jump-container" style="display:none;">
+            <a href="javascript:void(0)" class="mod-side-operation__jump-to-top">
+                <i class="icon-font icon-back"></i>
+            </a>
+            <div id="js-jump-plan-container" class="jump-plan-container" style="top: -11px;">
+                <i class="icon-font icon-plane jump-plane"></i>
+            </div>
+        </div>
+        
+        
+    </div>
+</aside>
+
+
+
+
+  
     <article id="post-Markdown学习笔记" class="article article-type-post  article-index" itemscope itemprop="blogPost">
   <div class="article-inner">
     
