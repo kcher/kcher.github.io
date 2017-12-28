@@ -20,6 +20,8 @@ mvn clean test
 mvn clean package
 ```
 
+<!--more-->
+
 ```
 mvn clean install
 ```
